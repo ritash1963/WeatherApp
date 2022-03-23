@@ -26,7 +26,7 @@ export class WeatherComponent implements OnInit {
   constructor(private weatherService: WeatherService) { }
 
   ngOnInit() {
-    this.getWeatherData();  
+    // this.getWeatherData();  
   }
 
   getWeatherData() {

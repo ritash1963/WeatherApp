@@ -1,5 +1,9 @@
-<h3>Temperature during the day </h3>
-<div class="container" >
+
+<!--<h5>Temperature during a week</h5>-->
+
+<button type="button" class="btn btn-primary ml-4 mt-3" (click)="getWeatherData()">Get weather data</button>
+
+<div class="container" *ngIf="tempNum">
 <div style="display: block;">
   <canvas baseChart 
   [datasets]="barChartData"
